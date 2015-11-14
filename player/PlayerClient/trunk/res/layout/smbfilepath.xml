@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView 
+        android:id="@+id/tv_sfp_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="12sp"
+        android:textColor="#8b8b8b"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/smbfile_path_arrow"/>
+
+</RelativeLayout>

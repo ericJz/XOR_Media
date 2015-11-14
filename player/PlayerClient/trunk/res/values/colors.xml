@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent_white">#00FFFFFF</color>
+    <color name="transparent_black">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="page_title_bg_color">#34a5ca</color>
+    <color name="play_server_list_item_txt_color">#666666</color>
+    
+    <color name="color_8dd76b">#8dd76b</color>
+    <color name="color_e3e3e3">#e3e3e3</color>
+    <drawable name="play_list_item_txt_color_now_playing">#2e648d</drawable>
+    <drawable name="play_list_item_txt_color_normal">#666666</drawable>
+    
+    <drawable name="tab_view_text_color_normal">#3f3f3e</drawable>
+    <drawable name="tab_view_text_color_focus">#71a957</drawable>
+    <drawable name="tab_view_text_color_select">#71a957</drawable>
+
+</resources>

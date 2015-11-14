@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playListOperationsRoot_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:gravity="left|bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="25dp"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/addPlayFileOperation_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/play_list_operation_button_border_bg"
+            android:contentDescription="@string/app_name"
+            android:text="@string/add_txt"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/deletePlayFileOperation_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/play_list_operation_button_border_bg"
+            android:contentDescription="@string/app_name"
+            android:text="@string/delete_txt"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

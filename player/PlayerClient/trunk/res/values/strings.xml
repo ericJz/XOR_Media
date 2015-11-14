@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PlayerClient</string>
+    <string name="load_data_shi_bai">加载数据失败</string>
+    <string name="load_data_succeed">加载数据成功</string>
+    <string name="no_content_update">暂无更新</string>
+    <string name="play_list_title">已连接播放器</string>
+    <string name="play_server_list">播放服务器列表</string>
+    <string name="connecnt_or_disconnect_server">连接或断开服务器</string>
+    <string name="connected_txt">连接</string>
+    <string name="disconnect_txt">断开</string>
+    <string name="play_list_txt">播放列表</string>
+    <string name="edit_list">修改列表</string>
+    <string name="connected_settings">连接设置</string>
+    <string name="close_txt">关闭</string>
+    <string name="add_txt">添加</string>
+    <string name="save_txt">保存</string>
+    <string name="delete_txt">删除</string>
+    <string name="cancel">取消</string>
+    <string name="define">确定</string>
+    <string name="music_player">音乐播放器</string>
+    <string name="add_music_player">添加音乐播放器</string>
+    <string name="edit_music_player">编辑音乐播放器</string>
+    <string name="player_name">播放器名称</string>
+    <string name="player_ip_address">播放器IP地址</string>
+    <string name="player_port">播放器监听端口</string>
+    <string name="manually_add_music_player">手动添加音乐播放器</string>
+    <string name="scan_online_music_player">扫描在线音乐播放器</string>
+    <string name="add_smb_server_by_hand">手动添加Samba服务器</string>
+    <string name="add_smb_server">添加Samba服务器</string>
+    <string name="search_smb_server">扫面局域网服务器</string>
+    <string name="smb_server_ip_address">服务器IP地址：</string>
+    <string name="smb_server_name">服务器名称：</string>
+    <string name="yong_hu_ming">用户名：</string>
+    <string name="mi_ma">密码：</string>
+    <string name="add">添加</string>
+    <string name="edit_smb_server">编辑samba服务器</string>
+    <string name="smb_server">服务器:</string>
+    <string name="wangji">忘记</string>
+    <string name="save">保存</string>
+    <string name="login_smb">登入samba服务器</string>
+    <string name="deng_ru">登入</string>
+    <string name="bo_fang">播放</string>
+    <string name="qu_ku">曲库</string>
+    <string name="smb">SMB</string>
+    <string name="she_zhi">设置</string>
+    <string name="delete_select">删除所选</string>
+    <string name="rename_list_name">重命名本列表名称</string>
+    <string name="send_to_current_playing">发送到当前播放</string>
+    <string name="rename_library_list">重命名曲库列表</string>
+    <string name="list_name">列表名称</string>
+    <string name="delete_all_list">清空列表</string>
+    <string name="reacquire_list">重新获取列表</string>
+
+</resources>

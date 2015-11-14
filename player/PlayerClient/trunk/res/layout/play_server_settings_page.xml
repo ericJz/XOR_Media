@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- 播放器设置项 -->
+
+    <LinearLayout
+        android:id="@+id/playerSettingsRoot_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/playerSettingsNameRoot_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/playerSettingsNameArrow_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="＞"
+                android:textColor="#969696"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/playerSettingsNameLabel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@id/playerSettingsNameArrow_tv"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/player_name"
+                android:textColor="#a4a4a4"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/playerSettingsNameValue_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/playerSettingsNameLabel_tv"
+                android:layout_below="@id/playerSettingsNameLabel_tv"
+                android:layout_toLeftOf="@id/playerSettingsNameArrow_tv"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#9a9a9a"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4" />
+
+        <RelativeLayout
+            android:id="@+id/playerSettingsIPAddressRoot_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/playerSettingsIPAddressArrow_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="＞"
+                android:textColor="#969696"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/playerSettingsIPAddressLabel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@id/playerSettingsIPAddressArrow_tv"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/player_ip_address"
+                android:textColor="#a4a4a4"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/playerSettingsIPAddressValue_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/playerSettingsIPAddressLabel_tv"
+                android:layout_below="@id/playerSettingsIPAddressLabel_tv"
+                android:layout_toLeftOf="@id/playerSettingsIPAddressArrow_tv"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#9a9a9a"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4" />
+
+        <RelativeLayout
+            android:id="@+id/playerSettingsPortRoot_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/playerSettingsPortArrow_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="＞"
+                android:textColor="#969696"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/playerSettingsPortLabel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@id/playerSettingsPortArrow_tv"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/player_port"
+                android:textColor="#a4a4a4"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/playerSettingsPortValue_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/playerSettingsPortLabel_tv"
+                android:layout_below="@id/playerSettingsPortLabel_tv"
+                android:layout_toLeftOf="@id/playerSettingsPortArrow_tv"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#9a9a9a"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4" />
+    </LinearLayout>
+
+    <!-- 播放器设置修改 -->
+
+    <RelativeLayout
+        android:id="@+id/playerSettingsEditRoot_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/play_server_grid_page_transparent_bg"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:id="@+id/playerSettingsEditTitle_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/player_port"
+                android:textColor="#8b8b8b"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/player_port"
+                android:textColor="#999999"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/playerSettingsEditPlayerPort_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/play_server_grid_page_edit_border_bg"
+                android:hint=""
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number|none"
+                android:singleLine="true"
+                android:textColor="#999999"
+                android:textColorHint="#999999"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/play_server_grid_page_buttons_border_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/cancel_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/cancel"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#cfcfcf" />
+
+                <TextView
+                    android:id="@+id/define_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/define"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:ignore="NestedWeights" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_static_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <View
+            android:id="@+id/rightSpaceView"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+
+        <LinearLayout
+            android:id="@+id/bottomSpaceView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/quitApp_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="退出"
+                android:textColor="@android:color/transparent"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/homeShakeRoot_fr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottomSpaceView"
+            android:layout_toLeftOf="@id/rightSpaceView" >
+
+            <ImageView
+                android:id="@+id/homeShakeButton_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/home_shake_button_bg" />
+
+            <TextView
+                android:id="@+id/homeShakeTip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/home_shake_button_tip_icon"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="99+"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

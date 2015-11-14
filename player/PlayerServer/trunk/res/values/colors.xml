@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="weishi_lib_white">#ffffff</color>
+    <color name="weishi_lib_black">#000000</color>
+    <color name="weishi_lib_transparent_white">#00FFFFFF</color>
+    <color name="weishi_lib_transparent_black">#00000000</color>
+    <color name="join_color">#ff6e3d</color>
+    <color name="selected_color">#22ac38</color>
+    <color name="booking_color">#00a0e9</color>
+
+</resources>

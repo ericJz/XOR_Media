@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/pageTitleRoot_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8dd76b"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/pageLogo_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/play_server_grid_page_title_logo_normal" />
+
+        <TextView
+            android:id="@+id/pageTitle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/pageLogo_iv"
+            android:ellipsize="end"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:text="@string/music_player"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/moreRoot_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e3e3e3"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/more_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/play_server_grid_page_more_normal" />
+            </RelativeLayout>
+
+            <com.xormedia.refreshlibrary.PullToRefreshGridView
+                android:id="@+id/playServerGrid_prgv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/moreRoot_rl"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+        </RelativeLayout>
+
+        <!-- 更多操作 -->
+
+        <RelativeLayout
+            android:id="@+id/moreOperating_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/play_server_grid_page_transparent_bg"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/closeMoreOperating_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/play_server_grid_page_close_normal" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/manuallyAddMusicPlayer_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="@string/manually_add_music_player"
+                    android:textColor="#8b8b8b"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e3e3e3" />
+
+                <TextView
+                    android:id="@+id/scanOnlineMusicPlayer_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="@string/scan_online_music_player"
+                    android:textColor="#8b8b8b"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e3e3e3" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 手动添加音乐播放器 -->
+
+        <RelativeLayout
+            android:id="@+id/manuallyAddMusicPlayer_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/play_server_grid_page_transparent_bg"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/add_music_player"
+                    android:textColor="#8b8b8b"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/player_name"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/playerName_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/play_server_grid_page_edit_border_bg"
+                    android:hint=""
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="text|none"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textColorHint="#999999"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/player_ip_address"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/playerIPAddress_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/play_server_grid_page_edit_border_bg"
+                    android:hint=""
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="text|none"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textColorHint="#999999"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/player_port"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/playerPort_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/play_server_grid_page_edit_border_bg"
+                    android:hint=""
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number|none"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textColorHint="#999999"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/play_server_grid_page_buttons_border_bg"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/delete_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/delete_txt"
+                        android:textColor="#999999"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:id="@+id/deleteLine_v"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#cfcfcf" />
+
+                    <TextView
+                        android:id="@+id/cancel_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/cancel"
+                        android:textColor="#999999"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#cfcfcf" />
+
+                    <TextView
+                        android:id="@+id/define_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/define"
+                        android:textColor="#999999"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

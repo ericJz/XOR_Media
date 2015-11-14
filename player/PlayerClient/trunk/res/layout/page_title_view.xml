@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#8dd76b"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/pageTitleViewLogo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/play_server_grid_page_title_logo_normal" />
+
+    <Switch
+        android:id="@+id/pageTitleViewSwitch_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:textOff="@string/disconnect_txt"
+        android:textOn="@string/connected_txt" />
+
+    <TextView
+        android:id="@+id/pageTitleViewTitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@id/pageTitleViewSwitch_s"
+        android:layout_toRightOf="@id/pageTitleViewLogo_iv"
+        android:ellipsize="end"
+        android:gravity="center_vertical|left"
+        android:singleLine="true"
+        android:text="@string/music_player"
+        android:textColor="#000000"
+        android:textSize="21sp" />
+</RelativeLayout>

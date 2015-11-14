@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestMyControl</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_test_shake">TestShakeActivity</string>
+    <string name="title_activity_test_float_view">TestFloatViewActivity</string>
+    <string name="title_activity_test_drag_layout">TestDragLayoutActivity</string>
+    <string name="title_activity_test_virtual_keyboard">TestVirtualKeyboardActivity</string>
+
+</resources>

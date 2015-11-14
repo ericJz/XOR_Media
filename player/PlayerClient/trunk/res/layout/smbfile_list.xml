@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- listView -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_e3e3e3"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_sfl_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/smblist_back"
+                    android:drawablePadding="5dp"
+                    android:text="Samba服务器"
+                    android:textColor="#999999"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imv_sfl_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/play_server_grid_page_more_normal" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f3f3f3" >
+
+                <LinearLayout
+                    android:id="@+id/ll_sfl_path"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ListView
+                android:id="@+id/ls_sfl_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:cacheColorHint="@color/transparent_white" >
+            </ListView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sfl_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/play_server_grid_page_transparent_bg"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/ll_sfl_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/imv_sfl_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/play_server_grid_page_close_normal" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_sfl_addsongs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="加入新曲库列表"
+                    android:textColor="#8b8b8b"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e3e3e3" />
+
+                <TextView
+                    android:id="@+id/tv_sfl_addoldsongs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="加入已有曲库列表"
+                    android:textColor="#8b8b8b"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e3e3e3" />
+
+                <TextView
+                    android:id="@+id/tv_sfl_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="全选本列表"
+                    android:textColor="#8b8b8b"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e3e3e3" />
+
+                <TextView
+                    android:id="@+id/tv_sfl_refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="刷新"
+                    android:textColor="#8b8b8b"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- 新曲库 -->
+
+            <LinearLayout
+                android:id="@+id/ll_sfl_newsongs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="加入新曲库列表"
+                    android:textColor="#8b8b8b"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="列表名称"
+                    android:textColor="#8b8b8b"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_sfl_songsname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/play_server_grid_page_edit_border_bg"
+                    android:hint=""
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="text|none"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textColorHint="#999999"
+                    android:textSize="16sp" />
+
+                <!-- 取消 添加 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/play_server_grid_page_buttons_border_bg"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_sfl_cancle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:text="@string/cancel"
+                        android:textColor="#999999"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#cfcfcf" />
+
+                    <TextView
+                        android:id="@+id/tv_sfl_adddone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:text="@string/add"
+                        android:textColor="#999999"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 已有曲库 -->
+
+            <LinearLayout
+                android:id="@+id/ll_sfl_oldsongs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="加入已有曲库列表"
+                    android:textColor="#8b8b8b"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/ls_sfl_songs"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/transparent_black"
+                    android:divider="@null"
+                    android:dividerHeight="0dp" >
+                </ListView>
+                <!-- 取消 添加 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/play_server_grid_page_buttons_border_bg"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_sfl_oldcancle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:text="@string/cancel"
+                        android:textColor="#999999"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#cfcfcf" />
+
+                    <TextView
+                        android:id="@+id/tv_sfl_oldadddone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:text="@string/add"
+                        android:textColor="#999999"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

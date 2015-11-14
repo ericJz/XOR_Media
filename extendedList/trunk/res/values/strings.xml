@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">MyRefreshViewLibrary</string>
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">释放即可刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中&#8230;</string>
+
+    <string name="pull_to_getmore_pull_label">上拉加载更多</string>
+    <string name="pull_to_getmore_release_label">释放加载更多</string>
+    <string name="pull_to_getmore_refreshing_label">加载中&#8230;</string>
+
+</resources>

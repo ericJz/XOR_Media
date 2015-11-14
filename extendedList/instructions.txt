@@ -1,0 +1,6 @@
+关于此刷新控件使用说明:
+
+	1,让此库生效:使用此控件库,必须将此设为一个android库(右键项目,修改Properties中Android属性的Library项,将Is Libaray勾选,则此可作为一个可用库)
+		(svn\extendedList\trunk:此目录下的应用即为此控件库)
+	2,在其他应用中如何引入此库:在其他应用的Properties中Android属性中的Libaray中Add选项,添加1中的Libaray,然后可在该应用中使用此库,效果等同于第三方jar包
+		(svn\extendedList\sample:此工程为刷新库的使用示例,其中对于Listview,GridView,ScrollView的使用做了说明)

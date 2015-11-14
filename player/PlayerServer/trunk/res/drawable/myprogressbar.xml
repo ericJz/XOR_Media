@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 描边 ：边框宽度与颜色 -->
+    <stroke
+        android:width="100dp"
+        android:color="@color/booking_color" />
+    <!-- 主要内容的padding 文字距离上下左右的距离 -->
+    <padding
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp" />
+    <!-- 圆角的半径  也可以统一设置半径 android:radius="9dip" -->
+    <corners android:radius="30dip" />
+    <!-- 没有描边的中间部分 -->
+    <solid android:color="@color/weishi_lib_transparent_white" />
+    <!-- 渐变 android:startColor和android:endColor分别为起始和结束颜色，android:angle是渐变角度，必须为45的整数倍 -->
+    <!--
+    <gradient
+        android:angle="270"
+        android:endColor="#FFFFFF"
+        android:startColor="#ff8c00" />
+
+
+
+
+    -->
+
+</shape>
